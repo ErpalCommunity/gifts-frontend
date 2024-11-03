@@ -1,0 +1,19 @@
+/* src/usdt.css */
+.usdt-transaction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  .usdt-transaction h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .usdt-transaction p {
+    font-size: 1.2rem;
+  }
+  

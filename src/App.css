@@ -1,38 +1,185 @@
 .App {
+  background-color: white;
   text-align: center;
+  padding: 20px;
+  padding-bottom: 100px; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.titles {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.image-title {
+  width: 44px;
+  height: 48px;
+  gap: 0px;
+  opacity: 0px;  
+}
+
+.text-title {
+  font-size: 24px;
+  font-weight: 590;
+  line-height: 32px;
+  letter-spacing: -0.4300000071525574px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 16px;
+}
+
+.text-description {
+  color: #8E8E93;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.4300000071525574px;
+  text-align: center;  
+}
+
+.gift-grid1, .gift-grid2 {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.gift-grid1 {
+  display: flex;
+  width: Fixed (393px)px;
+  height: Hug (246px)px;
+  padding: 0px 16px 0px 16px;
+  gap: 12px;
+  opacity: 0px;
+  margin-bottom: 12px;
+}
+
+.gift-grid2 {
+  display: flex;
+  width: Fixed (393px)px;
+  height: Hug (246px)px;
+  padding: 0px 16px 0px 16px;
+  gap: 12px;
+  opacity: 0px;
+}
+
+.gift-card1 {
+  background: linear-gradient(180deg, 
+  rgba(254, 160, 65, 0.2) 0%,
+  rgba(254, 159, 65, 0.1) 100%),
+  url('/public/icons/giftbg.svg');
+  height: 246px;
+  width: 174.5px;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+}
+
+.gift-card2 {
+  background: linear-gradient(180deg, 
+  rgba(70, 209, 0, 0.2) 0%, 
+  rgba(70, 209, 0, 0.06) 100%),
+  url('/public/icons/giftbg.svg');
+  height: 246px;
+  width: 174.5px;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+}
+
+.gift-card3 {
+  background: linear-gradient(180deg, 
+  rgba(0, 122, 255, 0.2) 0%, 
+  rgba(0, 122, 255, 0.05) 100%),
+  url('/public/icons/giftbg.svg');
+  height: 246px;
+  width: 174.5px;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+}
+
+.gift-card4 {
+  background: linear-gradient(180deg, 
+  rgba(255, 71, 71, 0.2) 0%, 
+  rgba(255, 71, 71, 0.05) 100%),
+  url('/public/icons/giftbg.svg');
+  height: 246px;
+  width: 174.5px;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+}
+
+.gift-stock {
+  font-size: 13px;
+  color: gray;
+  text-align: right;
+  top: 8px;
+  left: 110.5px;
+  margin: 0 auto;
+}
+
+.gift-image {
+  width: 128px;
+  height: 128px;
+  top: 34px;
+  left: 23.25px;
+  padding: 5.33px;
+  gap: 8px;
+  opacity: 0px;  
+}
+
+.gift-name {
+  font-weight: 600;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.gift-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: Hug (107px)px;
+  height: Fixed (30px)px;
+  top: 200px;
+  left: 33.75px;
+  padding: 6px 16px 6px 12px;
+  gap: 0px;
+  border: none;
+  border-radius: 100px;
+  background-color: #007aff;
   color: white;
+  font-weight: 600;
+  font-size: 13px;
 }
 
-.App-link {
-  color: #61dafb;
+.price-icon {
+  width: 24px;
+  height: 24px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.gift-sold-out {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: Hug (107px)px;
+  height: Fixed (30px)px;
+  top: 200px;
+  left: 33.75px;
+  padding: 6px 16px 6px 12px;
+  gap: 0px;
+  border: none;
+  border-radius: 100px;
+  background-color: rgb(243, 231, 231);
+  color: rgb(156, 147, 150);
+  font-weight: 600;
+  font-size: 13px;
 }
