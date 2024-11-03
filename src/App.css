@@ -64,7 +64,7 @@
   background: linear-gradient(180deg, 
   rgba(254, 160, 65, 0.2) 0%,
   rgba(254, 159, 65, 0.1) 100%),
-  url('/public/icons/giftbg.svg');
+  url('/public/giftbg.svg');
   height: 246px;
   width: 174.5px;
   padding: 15px;
@@ -78,7 +78,7 @@
   background: linear-gradient(180deg, 
   rgba(70, 209, 0, 0.2) 0%, 
   rgba(70, 209, 0, 0.06) 100%),
-  url('/public/icons/giftbg.svg');
+  url('/public/giftbg.svg');
   height: 246px;
   width: 174.5px;
   padding: 15px;
@@ -92,7 +92,7 @@
   background: linear-gradient(180deg, 
   rgba(0, 122, 255, 0.2) 0%, 
   rgba(0, 122, 255, 0.05) 100%),
-  url('/public/icons/giftbg.svg');
+  url('/public/giftbg.svg');
   height: 246px;
   width: 174.5px;
   padding: 15px;
@@ -106,7 +106,7 @@
   background: linear-gradient(180deg, 
   rgba(255, 71, 71, 0.2) 0%, 
   rgba(255, 71, 71, 0.05) 100%),
-  url('/public/icons/giftbg.svg');
+  url('/public/giftbg.svg');
   height: 246px;
   width: 174.5px;
   padding: 15px;
