@@ -7,8 +7,9 @@
   justify-content: space-around;
   padding: 10px 0;
   box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.2);
+  height: 84px;
   width: Fixed (393px)px;
-  height: Hug (92px)px;
+  height: Hug (96px)px;
   padding: 8px 0px 0px 0px;
   background: rgba(241, 241, 242, 0.75);
   backdrop-filter: blur(100px)
