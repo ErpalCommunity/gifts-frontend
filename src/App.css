@@ -1,13 +1,7 @@
-body {
-  overflow: hidden;
-}
-
 .App {
-  background-color: white;
   text-align: center;
   padding: 20px;
   padding-bottom: 100px; 
-  overflow: auto;
   height: 550px;
 }
 
@@ -19,9 +13,7 @@ body {
 
 .image-title {
   width: 44px;
-  height: 48px;
-  gap: 0px;
-  opacity: 0px;  
+  height: 48px; 
 }
 
 .text-title {
@@ -53,7 +45,6 @@ body {
   height: Hug (246px)px;
   padding: 0px 16px 0px 16px;
   gap: 12px;
-  opacity: 0px;
   margin-bottom: 12px;
 }
 
@@ -63,7 +54,6 @@ body {
   height: Hug (246px)px;
   padding: 0px 16px 0px 16px;
   gap: 12px;
-  opacity: 0px;
 }
 
 .gift-card1 {
@@ -138,7 +128,6 @@ body {
   left: 23.25px;
   padding: 5.33px;
   gap: 8px;
-  opacity: 0px;  
 }
 
 .gift-name {
@@ -157,7 +146,6 @@ body {
   top: 200px;
   left: 33.75px;
   padding: 6px 16px 6px 12px;
-  gap: 0px;
   border: none;
   border-radius: 100px;
   background-color: #007aff;
