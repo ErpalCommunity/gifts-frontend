@@ -1,8 +1,13 @@
+body {
+  overflow: hidden;
+}
+
 .App {
   text-align: center;
   padding: 20px;
   padding-bottom: 100px; 
   height: 550px;
+  overflow: auto;
 }
 
 .titles {
