@@ -10,7 +10,7 @@ function App() {
     <Router>
       <div className="App">
         <div className="titles">
-          <img src="gift-title.png" className="image-title" alt="Gift" crossOrigin="anonymous" />
+          <img src="/gift-title.png" className="image-title" alt="Gift" crossOrigin="anonymous" />
           <p className="text-title">Buy and Send Gifts</p>
           <p className="text-description">Unique gifts for everyone by Crypto Pay.</p>
         </div>
