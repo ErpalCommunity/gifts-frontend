@@ -4,7 +4,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import Navigator from './Navigator';
 import Store from './Store';
 import './App.css'; 
-import giftTitle from '../images/gift-title.png'; // Убедитесь, что путь правильный
+import giftTitle from './images/gift-title.png'; // Убедитесь, что путь правильный
 
 function App() {
   const [imgError, setImgError] = useState(false); // Состояние для отслеживания ошибки изображения
