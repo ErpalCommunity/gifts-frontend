@@ -10,7 +10,7 @@ const UsdtPage = () => {
       <div className="info-section">
         <div className="title-section">
           <h2 className="gift-title">Delicious Cake</h2>
-          <p className="gift-stock">3 of 500</p>
+          <p className="gift-stock1">3 of 500</p>
         </div>
         <p className="gift-description">
           Purchase this gift for the opportunity to give it to another user.
