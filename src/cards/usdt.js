@@ -1,7 +1,10 @@
 import React, { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './usdt.css';
 
 const UsdtPage = () => {
+  const navigate = useNavigate(); // Получаем функцию navigate из react-router-dom
+
   useEffect(() => {
     // Проверяем, доступен ли Telegram API
     if (window.Telegram && window.Telegram.WebApp) {
@@ -10,9 +13,7 @@ const UsdtPage = () => {
 
       // Обработчик события нажатия кнопки "Назад"
       const handleBackButtonClick = () => {
-        console.log('Back button pressed');
-        // Здесь можно выполнить действие, например, закрыть мини-приложение
-        window.Telegram.WebApp.close(); // Закрыть мини-приложение
+        navigate(-1); // Возвращаем на предыдущую страницу
       };
 
       // Привязываем обработчик
@@ -23,7 +24,7 @@ const UsdtPage = () => {
         window.Telegram.WebApp.BackButton.offClick = handleBackButtonClick;
       };
     }
-  }, []);
+  }, [navigate]); // Добавляем navigate в зависимости
 
   return (
     <div className="buy-container">
