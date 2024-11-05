@@ -1,15 +1,27 @@
-// src/USDT.js
 import React from 'react';
-import './usdt.css'; // Ensure the CSS file is properly linked
+import './usdt.css';
 
-function USDT() {
+const UsdtPage = () => {
   return (
-    <div className="usdt-transaction">
-      <h1>Transaction Page</h1>
-      <p>You are about to make a transaction of <strong>10 USDT</strong>.</p>
-      {/* Add any additional details about the transaction here */}
+    <div className="buy-container">
+      <div className="img-buy">
+        <img src="/Animated_AgADgRgAApWfiUo.gif" alt="Buy Delicious" className="del-gif" />
+      </div>
+      <div className="info-section">
+        <div className="title-section">
+          <h2 className="gift-title">Delicious Cake</h2>
+          <p className="gift-stock">3 of 500</p>
+        </div>
+        <p className="gift-description">
+          Purchase this gift for the opportunity to give it to another user.
+        </p>
+        <div className="price-section">
+          <img src="/usdt-gr.svg" alt="USDT" className="price-icon" />
+          <span className="price-text">10 USDT</span>
+        </div>
+      </div>
     </div>
   );
-}
+};
 
-export default USDT;
+export default UsdtPage;

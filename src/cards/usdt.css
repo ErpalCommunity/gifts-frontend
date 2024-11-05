@@ -1,19 +1,106 @@
-/* src/usdt.css */
-.usdt-transaction {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    font-family: Arial, sans-serif;
-  }
-  
-  .usdt-transaction h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .usdt-transaction p {
-    font-size: 1.2rem;
-  }
-  
+/* Контейнер для размещения вверху по центру */
+.buy-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 16px; 
+  height: 100vh;
+  gap: 8px; /* Уменьшенный отступ между элементами */
+}
+
+/* Стили для блока с градиентным фоном */
+.img-buy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, rgba(254, 160, 65, 0.2) 0%, rgba(254, 159, 65, 0.1) 100%);
+  background-image: url('/public/usdt-img.svg'); 
+  background-size: cover; 
+  height: 361px; 
+  width: 361px; 
+  padding: 15px;
+  border-radius: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative; 
+}
+
+/* Центрируем и настраиваем размеры GIF */
+.del-gif {
+  width: 245.55px; 
+  height: 245.55px; 
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+}
+
+/* Секция с текстовой информацией */
+.info-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px; /* Уменьшенный отступ между заголовком и описанием */
+  width: 361px; 
+}
+
+/* Заголовок и счетчик на одной линии */
+.title-section {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Отступ между заголовком и количеством */
+}
+
+.gift-title {
+  font-size: 24px;
+  font-weight: 590;
+  line-height: 32px;
+  text-align: left; /* Выравнивание текста влево */
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+/* Изменение цвета и стилей для stock */
+.gift-stock {
+  color: #007AFF !important; /* Синий цвет */
+  padding: 4px 8px; /* Уменьшенный отступ */
+  border-radius: 100px;
+  background: #007AFF1F; /* Фон */
+  backdrop-filter: blur(50px);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  text-align: left; 
+  width: Hug (73px)px;
+  height: Hug (22px)px;
+  margin-top: 0;
+}
+
+/* Описание */
+.gift-description {
+  color: #8E8E93;
+  font-size: 15px; /* Уменьшенный размер шрифта */
+  font-weight: 400;
+  line-height: 20px; /* Уменьшенная высота строки */
+  margin-top: 0; 
+  text-align: left;  
+}
+
+/* Секция цены */
+.price-section {
+  display: flex;
+  align-items: center;
+  gap: 8px; 
+}
+
+.price-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.price-text {
+  font-size: 17px;
+  font-weight: 510;
+  line-height: 22px;
+  letter-spacing: -0.44200000166893005px;
+  text-align: left;  
+}
