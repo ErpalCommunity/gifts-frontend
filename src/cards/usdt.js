@@ -6,14 +6,22 @@ const UsdtPage = () => {
     // Проверяем, доступен ли Telegram API
     if (window.Telegram && window.Telegram.WebApp) {
       // Устанавливаем кнопку "Назад" как видимую
-      window.Telegram.WebApp.setupBackButton({ is_visible: true });
+      window.Telegram.WebApp.BackButton.show(); // Делаем кнопку видимой
 
       // Обработчик события нажатия кнопки "Назад"
-      window.Telegram.WebApp.onBackButtonPressed(() => {
+      const handleBackButtonClick = () => {
         console.log('Back button pressed');
         // Здесь можно выполнить действие, например, закрыть мини-приложение
         window.Telegram.WebApp.close(); // Закрыть мини-приложение
-      });
+      };
+
+      // Привязываем обработчик
+      window.Telegram.WebApp.BackButton.onClick = handleBackButtonClick;
+
+      // Возвращаем функцию для очистки при размонтировании
+      return () => {
+        window.Telegram.WebApp.BackButton.offClick = handleBackButtonClick;
+      };
     }
   }, []);
 
