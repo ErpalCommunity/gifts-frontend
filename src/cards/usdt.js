@@ -9,26 +9,22 @@ const UsdtPage = () => {
     // Проверяем, доступен ли Telegram API
     if (window.Telegram && window.Telegram.WebApp) {
       // Устанавливаем кнопку "Назад" как видимую
-      window.Telegram.WebApp.BackButton.show(); // Делаем кнопку видимой
-
-      // Обработчик события нажатия кнопки "Назад"
-      const handleBackButtonClick = () => {
+      window.Telegram.WebApp.BackButton.onClick = () => {
         navigate(-1); // Возвращаем на предыдущую страницу
       };
 
-      // Привязываем обработчик
-      window.Telegram.WebApp.BackButton.onClick = handleBackButtonClick;
+      window.Telegram.WebApp.BackButton.show(); // Делаем кнопку видимой
 
-      // Возвращаем функцию для очистки при размонтировании
+      // Функция для очистки при размонтировании
       return () => {
-        window.Telegram.WebApp.BackButton.offClick = handleBackButtonClick;
+        window.Telegram.WebApp.BackButton.offClick();
       };
     }
   }, [navigate]); // Добавляем navigate в зависимости
 
   return (
     <div className="buy-container">
-      <div className="img-buy">
+      <div className="imgs-buy">
         <img src="/Animated_AgADgRgAApWfiUo.gif" alt="Buy Delicious" className="del-gif" />
       </div>
       <div className="info-section">

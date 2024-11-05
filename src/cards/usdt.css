@@ -9,12 +9,14 @@
 }
 
 /* Стили для блока с градиентным фоном */
-.img-buy {
+.imgs-buy {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(180deg, rgba(254, 160, 65, 0.2) 0%, rgba(254, 159, 65, 0.1) 100%);
-  background-image: url('/public/usdt-img.svg'); 
+  background: linear-gradient(180deg, 
+  rgba(254, 160, 65, 0.2) 0%,
+  rgba(254, 159, 65, 0.1) 100%),
+  url('/public/usdt-img.svg');
   background-size: cover; 
   height: 361px; 
   width: 361px; 
@@ -26,12 +28,12 @@
 
 /* Центрируем и настраиваем размеры GIF */
 .del-gif {
-  width: 245.55px; 
-  height: 245.55px; 
-  position: absolute; 
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
+  width: 267.87px;
+  height: 267.87px;
+  top: 47.09px;
+  left: 47.09px;
+  padding: 11.16px;
+  gap: 8px;  
 }
 
 /* Секция с текстовой информацией */
