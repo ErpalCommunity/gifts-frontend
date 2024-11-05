@@ -1,18 +1,16 @@
 .navigator {
-  display: none;
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
   display: flex;
   justify-content: space-around;
-  padding: 10px 0;
+  padding: 0; /* Убираем padding */
   box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.2);
-  width: Fixed (393px)px;
+  width: 393px; /* Исправлено */
   height: 84px;
-  padding: 8px 0px 0px 0px;
   background: rgba(241, 241, 242, 0.75);
-  backdrop-filter: blur(100px)
+  backdrop-filter: blur(100px);
 }
 
 .nav-item {
