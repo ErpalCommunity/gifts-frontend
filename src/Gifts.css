@@ -1,4 +1,3 @@
-/* src/Gifts.css */
 .gifts-container {
     padding: 20px;
     text-align: center;
@@ -31,4 +30,30 @@
     text-align: center;
     color: #8E8E93;
     margin: 0;
+}
+
+.no-gifts {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.balloons-image {
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+}
+
+.no-gifts-text {
+    font-size: 16px;
+    color: #000;
+    margin: 10px 0;
+}
+
+.open-store-link {
+    font-size: 16px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.open-store-link:hover {
+    text-decoration: underline;
 }
