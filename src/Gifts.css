@@ -65,3 +65,24 @@
     text-align: center;
     color: rgba(0, 122, 255, 1);
 }
+
+.balloons-image {
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+}
+
+.no-gifts-text {
+    font-size: 16px;
+    color: #000;
+    margin: 10px 0;
+}
+
+.open-store-link {
+    font-size: 16px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.open-store-link:hover {
+    text-decoration: underline;
+}
