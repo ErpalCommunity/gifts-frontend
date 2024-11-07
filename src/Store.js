@@ -35,9 +35,11 @@ const Store = () => {
           <p className="gift-stock">802 of 5K</p>
           <img src="/PremiumGiftStickers_AgADuUAAAnv6SEk.gif" alt="Green Star" className="gift-image" />
           <p className="gift-name">Green Star</p>
+          <Link to="/ton" className="link-button">
           <button className="gift-price">
             <img src='/ton.svg' alt="TON" className="price-icon" /> 5 TON
           </button>
+          </Link>
         </div>
       </div>
 
@@ -47,9 +49,11 @@ const Store = () => {
           <p className="gift-stock">458 of 5K</p>
           <img src="/PremiumGiftStickers_AgADaUAAArGISUk.gif" alt="Blue Star" className="gift-image" />
           <p className="gift-name">Blue Star</p>
+          <Link to="/eth" className="link-button">
           <button className="gift-price">
             <img src='/ethereum.svg' alt="ETH" className="price-icon" /> 0.01 ETH
           </button>
+          </Link>
         </div>
 
         {/* Card 4 */}

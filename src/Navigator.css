@@ -1,4 +1,3 @@
-/* src/Navigator.css */
 .navigator { 
   position: fixed; 
   bottom: 0; 
@@ -41,3 +40,9 @@
 .nav-item.active .nav-text {
   color: #007AFF;
 }
+
+*:focus, *:active {
+  outline: none;
+  box-shadow: none;
+}
+

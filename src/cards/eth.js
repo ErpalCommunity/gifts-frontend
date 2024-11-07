@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './cards-style.css';
 
-const UsdtPage = () => {
+const EthPage = () => {
   const navigate = useNavigate(); // Получаем функцию navigate из react-router-dom
 
   useEffect(() => {
@@ -44,4 +44,4 @@ const UsdtPage = () => {
   );
 };
 
-export default UsdtPage;
+export default EthPage;

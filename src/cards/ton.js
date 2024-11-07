@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './cards-style.css';
 
-const UsdtPage = () => {
+const TonPage = () => {
   const navigate = useNavigate(); // Получаем функцию navigate из react-router-dom
 
   useEffect(() => {
@@ -29,8 +29,8 @@ const UsdtPage = () => {
       </div>
       <div className="info-section">
         <div className="title-section">
-          <h2 className="gift-title">Delicious Cake</h2>
-          <p className="gift-stock1">3 of 500</p>
+          <h2 className="gift-title">Green Start</h2>
+          <p className="gift-stock1">802 of 3k</p>
         </div>
         <p className="gift-description">
           Purchase this gift for the opportunity to give it to another user.
@@ -44,4 +44,4 @@ const UsdtPage = () => {
   );
 };
 
-export default UsdtPage;
+export default TonPage;

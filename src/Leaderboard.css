@@ -1,0 +1,95 @@
+.leaderboard-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    width: Fixed (373px)px;
+    height: Hug (36px)px;
+    padding: 7px 8px 7px 8px;
+    border-radius: 10px;
+    background: rgba(239, 239, 243, 1);
+  }
+  
+  .leaderboard-svg {
+    width: 40px; 
+    height: 40px;
+    margin-right: 15px;
+  }
+  
+  .search-input {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.4000000059604645px;
+    text-align: left;  
+    width: Fixed (373px)px;
+    height: Hug (36px)px;
+    padding: 7px 8px 7px 8px;
+    border-radius: 10px;
+    background: rgba(239, 239, 243, 1);  
+  }
+  
+  .leaderboard-list {
+    margin-top: 40px;
+  }
+  
+  .leaderboard-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .avatar {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .user-name {
+    font-weight: bold;
+  }
+  
+  .gifts-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .gifts-svg {
+    margin-right: 5px;
+  }
+  
+  .gifts-count {
+    font-size: 14px;
+  }
+  
+  .leaderboard-position {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .footer {
+    position: fixed;
+    bottom: 200px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer .user-info,
+  .footer .gifts-info,
+  .footer .leaderboard-position {
+    margin: 5px;
+  }
