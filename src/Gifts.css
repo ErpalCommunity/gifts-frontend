@@ -67,8 +67,8 @@
 }
 
 .balloons-image {
-    width: 50px; /* Adjust size as needed */
-    height: auto;
+    height: 100px;
+    width: 100px;
 }
 
 .no-gifts-text {

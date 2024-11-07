@@ -14,11 +14,6 @@ const Gifts = () => {
         <a href="#" className="open-store-link">Open Store</a>
       </div>
       <Navigator />
-      <div className="no-gifts">
-        <img src="path/to/balloons.png" alt="Balloons" className="balloons-image" />
-        <p className="no-gifts-text">You don't have any gifts yet.</p>
-        <a href="#" className="open-store-link">Open Store</a>
-      </div>
     </div>
   );
 };
