@@ -24,20 +24,20 @@ const EthPage = () => {
 
   return (
     <div className="buy-container">
-      <div className="imgs-buy">
-        <img src="/Animated_AgADgRgAApWfiUo.gif" alt="Buy Delicious" className="del-gif" />
+      <div className="imgs-buy-eth">
+        <img src="/PremiumGiftStickers_AgADaUAAArGISUk.gif" alt="Buy Blue Star" className="del-gif" />
       </div>
       <div className="info-section">
         <div className="title-section">
-          <h2 className="gift-title">Delicious Cake</h2>
-          <p className="gift-stock1">3 of 500</p>
+          <h2 className="gift-title">Blue Star</h2>
+          <p className="gift-stock1">458 of 5k</p>
         </div>
         <p className="gift-description">
           Purchase this gift for the opportunity to give it to another user.
         </p>
         <div className="price-section">
-          <img src="/usdt-gr.svg" alt="USDT" className="price-icon" />
-          <span className="price-text">10 USDT</span>
+          <img src="/eth-gr.svg" alt="ETH" className="price-icon" />
+          <span className="price-text">0.01 ETH</span>
         </div>
       </div>
     </div>

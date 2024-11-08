@@ -24,8 +24,8 @@ const TonPage = () => {
 
   return (
     <div className="buy-container">
-      <div className="imgs-buy">
-        <img src="/Animated_AgADgRgAApWfiUo.gif" alt="Buy Delicious" className="del-gif" />
+      <div className="imgs-buy-ton">
+        <img src="/PremiumGiftStickers_AgADuUAAAnv6SEk.gif" alt="Buy Delicious" className="del-gif" />
       </div>
       <div className="info-section">
         <div className="title-section">
@@ -36,8 +36,8 @@ const TonPage = () => {
           Purchase this gift for the opportunity to give it to another user.
         </p>
         <div className="price-section">
-          <img src="/usdt-gr.svg" alt="USDT" className="price-icon" />
-          <span className="price-text">10 USDT</span>
+          <img src="/ton-gr.svg" alt="USDT" className="price-icon" />
+          <span className="price-text">5 TON</span>
         </div>
       </div>
     </div>

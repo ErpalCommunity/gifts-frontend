@@ -24,7 +24,7 @@ const UsdtPage = () => {
 
   return (
     <div className="buy-container">
-      <div className="imgs-buy">
+      <div className="imgs-buy-usdt">
         <img src="/Animated_AgADgRgAApWfiUo.gif" alt="Buy Delicious" className="del-gif" />
       </div>
       <div className="info-section">
