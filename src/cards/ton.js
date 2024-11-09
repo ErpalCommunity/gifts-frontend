@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './cards-style.css';
+import Navigator from '../Navigator'; // Import the Navigator component
 
 const TonPage = () => {
   const navigate = useNavigate(); // Получаем функцию navigate из react-router-dom
@@ -9,15 +10,16 @@ const TonPage = () => {
     // Проверяем, доступен ли Telegram API
     if (window.Telegram && window.Telegram.WebApp) {
       // Устанавливаем кнопку "Назад" как видимую
-      window.Telegram.WebApp.BackButton.onClick = () => {
+      window.Telegram.WebApp.BackButton.onClick(() => {
         navigate(-1); // Возвращаем на предыдущую страницу
-      };
+      });
 
       window.Telegram.WebApp.BackButton.show(); // Делаем кнопку видимой
 
       // Функция для очистки при размонтировании
       return () => {
         window.Telegram.WebApp.BackButton.offClick();
+        window.Telegram.WebApp.BackButton.hide(); // Скрываем кнопку при размонтировании
       };
     }
   }, [navigate]); // Добавляем navigate в зависимости

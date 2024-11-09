@@ -1,40 +1,41 @@
 import React, { useState, useEffect } from 'react';
-import './Leaderboard.css';  // Понадобится для стилей
-import Navigator from './Navigator';  // Навигация, если она требуется
+import './Leaderboard.css';
+import Navigator from './Navigator';
 
-// Компонент Leaderboard
 const Leaderboard = () => {
   const [searchQuery, setSearchQuery] = useState('');
-  const [users, setUsers] = useState([]);
+  const [isFocused, setIsFocused] = useState(false); // Состояние для фокуса
+  const [users, setUsers] = useState([]); // Добавлено состояние для пользователей
 
   useEffect(() => {
-    // Здесь мы можем добавить вызов API для получения данных из MongoDB.
-    // Пока что статически.
     setUsers([
       { id: 1, name: 'user1', avatar: 'https://linktoavatar1.com', gifts: 120 },
       { id: 2, name: 'user2', avatar: 'https://linktoavatar2.com', gifts: 110 },
       { id: 3, name: 'user3', avatar: 'https://linktoavatar3.com', gifts: 100 },
       { id: 4, name: 'user4', avatar: 'https://linktoavatar4.com', gifts: 90 },
-      // ...добавьте других пользователей
     ]);
   }, []);
 
   return (
     <div className="leaderboard-container">
       <div className="header">
-        <input
-          src="/search-lea.svg"
-          type="text"
-          className="search-input"
-          placeholder="Search"
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-        />
+        <div className={`search-container ${isFocused ? 'focused' : ''}`}> {/* Исправлен синтаксис */}
+          <img src="/search-lea.svg" className="search-icon" alt="Search Icon" />
+          <input
+            type="text"
+            className="search-input"
+            placeholder="Search"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            onFocus={() => setIsFocused(true)}
+            onBlur={() => !searchQuery && setIsFocused(false)} // Возвращаем по центру, если поле пустое
+          />
+        </div>
       </div>
 
       <div className="leaderboard-list">
         {users
-          .filter(user => user.name.toLowerCase().includes(searchQuery.toLowerCase())) // Фильтрация по имени
+          .filter(user => user.name.toLowerCase().includes(searchQuery.toLowerCase()))
           .map((user, index) => (
             <div className="leaderboard-item" key={user.id}>
               <div className="user-info">
