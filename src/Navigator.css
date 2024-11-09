@@ -46,3 +46,28 @@
   box-shadow: none;
 }
 
+.nav-item {
+  transition: transform 0.1s ease;
+}
+
+.nav-item:active {
+  transform: scale(0.95);
+}
+
+.nav-item {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.nav-item.active {
+  color: #007BFF; /* Change text color for active item */
+}
+
+.nav-item.active .nav-icon {
+  filter: brightness(0) saturate(100%) invert(32%) sepia(100%) saturate(2000%) hue-rotate(180deg) brightness(95%) contrast(101%);
+  /* Change icon color for active item */
+}
+
+

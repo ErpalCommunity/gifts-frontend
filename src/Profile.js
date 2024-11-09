@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Profile.css';
 import Navigator from './Navigator';
+import { Link } from'react-router-dom';
 
 const Profile = () => {
   const [selectedTheme, setSelectedTheme] = useState('light');
@@ -46,7 +47,7 @@ const Profile = () => {
       <div className="no-gifts">
         <img src="/balloons.svg" alt="Balloons" className="balloons-image" />
         <p className="no-gifts-text">You don't have any gifts yet.</p>
-        <a href="#" className="open-store-link">Open Store</a>
+        <Link to="/" className="open-store-link">Open Store</Link>
       </div>
       <Navigator/>
     </div>

@@ -1,117 +1,123 @@
 .profile-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .switchers {
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-  }
-  .theme-switcher {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.switchers {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.theme-switcher {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 70px;
 }
 
 .theme-icon {
-    background-color: gray;
-    border-radius: 50%;
-    padding: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  background-color: gray;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .theme-icon.selected {
-    background-color: darkgray;
+  background-color: darkgray;
 }
 
-  .theme-switcher, .language-switcher {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 70px;
-  }
-  
-  .profile-image {
-    position: relative;
-    margin-bottom: 10px;
-  }
-  
-  .image-label {
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    width: 51px;
-    height: 22px;
-    top: 86px;
-    left: 43px;
-    padding: 0px 8px 0px 8px;
-    border-radius: 100px;
-    border: 2px 0px 0px 0px;
-    background: rgba(142, 142, 147, 1);
-    border: 2px solid rgba(255, 255, 255, 1);
-    color: white;
-  }
-  
-  .profile-info {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .recent-actions {
-    font-size: 17px;
-    font-weight: 510;
-    line-height: 22px;
-    letter-spacing: -0.4300000071525574px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    color: rgba(0, 122, 255, 1);
-    margin-bottom: 10px; /* Reduced margin to move elements higher by 10px */
+.language-switcher {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 70px;
+}
+
+.profile-image {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 50%;
+}
+
+.image-label {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 5px;
+  width: 51px;
+  height: 22px;
+  padding: 0 8px;
+  border-radius: 100px;
+  background: rgba(142, 142, 147, 1);
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 1);
+}
+
+.profile-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.recent-actions {
+  font-size: 17px;
+  font-weight: 510;
+  line-height: 22px;
+  letter-spacing: -0.43px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: rgba(0, 122, 255, 1);
+  margin-bottom: 10px;
 }
 
 .recent-text {
-    display: flex; /* Align icon and text horizontally */
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 10px; /* Reduced margin to move elements higher by 10px */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .recent-icon {
-    margin-right: 5px;
-    display: inline-block; /* Ensures the icon is inline with text */
-    vertical-align: middle; /* Aligns the icon vertically with the text */
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
-  .profile-image {
-    position: relative;
-    width: 100px;
-    height: 100px;
-  }
-  
-  .profile-image img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    border-radius: 50%; /* Круглое изображение, при необходимости */
-  }
-  
-  .image-label {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 5px; /* Отступ от нижнего края изображения */
-    width: Hug (51px)px;
-    height: Hug (22px)px;
-    top: 86px;
-    padding: 0px 8px 0px 8px;
-    border-radius: 100px;
-    background: rgba(142, 142, 147, 1);
-    color: white;
-    border: 2px;
-    border: 2px solid rgba(255, 255, 255, 1)
-  }
+.no-gifts {
+  margin-top: 20px;
+  text-align: center;
+  width: 90%;
+  height: Hug (240px);
+  padding: 32px 16px;
+  border-radius: 12px;
+  background: rgba(239, 239, 243, 1);
+}
+
+.balloons-image {
+  width: 100px;
+  height: 100px;
+}
+
+.no-gifts-text {
+  font-size: 16px;
+  color: #000;
+  margin: 10px 0;
+}
+
+.open-store-link {
+  font-size: 16px;
+  color: #007BFF;
+  text-decoration: none;
+}

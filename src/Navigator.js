@@ -9,6 +9,8 @@ function Navigator() {
   const handleNavigation = (path) => {
     if (navigator.vibrate) {
       navigator.vibrate(100); // Vibrate for 100 milliseconds
+    } else {
+      console.log('Vibration not supported'); // Fallback action
     }
     navigate(path);
   };
