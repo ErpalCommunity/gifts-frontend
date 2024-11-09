@@ -1,12 +1,17 @@
 body {
   overflow: hidden;
   background-color: white;
+  -webkit-tap-highlight-color: transparent; /* Remove tap highlight on iOS */
+}
+
+* {
+  user-select: none; /* Prevent text selection */
 }
 
 .App {
   text-align: center;
   padding: 20px;
-  padding-bottom: 100px; 
+  padding-bottom: 100px;
   height: 600px;
   overflow: auto;
 }
@@ -19,14 +24,14 @@ body {
 
 .image-title {
   width: 44px;
-  height: 48px; 
+  height: 48px;
 }
 
 .text-title {
   font-size: 24px;
   font-weight: 590;
   line-height: 32px;
-  letter-spacing: -0.4300000071525574px;
+  letter-spacing: -0.43px;
   text-align: center;
   margin: 0 auto;
   margin-top: 16px;
@@ -37,8 +42,8 @@ body {
   font-size: 17px;
   font-weight: 400;
   line-height: 22px;
-  letter-spacing: -0.4300000071525574px;
-  text-align: center;  
+  letter-spacing: -0.43px;
+  text-align: center;
 }
 
 .gift-grid1, .gift-grid2 {
@@ -55,6 +60,7 @@ body {
 }
 
 .gift-grid2 {
+  justify-content: center;
   display: flex;
   width: Fixed (393px)px;
   height: Hug (246px)px;
@@ -63,12 +69,9 @@ body {
 }
 
 .gift-card1 {
-  background: linear-gradient(180deg, 
-  rgba(254, 160, 65, 0.2) 0%,
-  rgba(254, 159, 65, 0.1) 100%),
-  url('/public/giftbg.svg');
-  height: 246px;
+  background: linear-gradient(180deg, rgba(254, 160, 65, 0.2) 0%, rgba(254, 159, 65, 0.1) 100%), url('/public/giftbg.svg');
   width: 174.5px;
+  height: 246px;
   padding: 15px;
   border-radius: 12px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -77,10 +80,7 @@ body {
 }
 
 .gift-card2 {
-  background: linear-gradient(180deg, 
-  rgba(70, 209, 0, 0.2) 0%, 
-  rgba(70, 209, 0, 0.06) 100%),
-  url('/public/giftbg.svg');
+  background: linear-gradient(180deg, rgba(70, 209, 0, 0.2) 0%, rgba(70, 209, 0, 0.06) 100%), url('/public/giftbg.svg');
   height: 246px;
   width: 174.5px;
   padding: 15px;
@@ -91,10 +91,7 @@ body {
 }
 
 .gift-card3 {
-  background: linear-gradient(180deg, 
-  rgba(0, 122, 255, 0.2) 0%, 
-  rgba(0, 122, 255, 0.05) 100%),
-  url('/public/giftbg.svg');
+  background: linear-gradient(180deg, rgba(0, 122, 255, 0.2) 0%, rgba(0, 122, 255, 0.05) 100%), url('/public/giftbg.svg');
   height: 246px;
   width: 174.5px;
   padding: 15px;
@@ -105,10 +102,7 @@ body {
 }
 
 .gift-card4 {
-  background: linear-gradient(180deg, 
-  rgba(255, 71, 71, 0.2) 0%, 
-  rgba(255, 71, 71, 0.05) 100%),
-  url('/public/giftbg.svg');
+  background: linear-gradient(180deg, rgba(255, 71, 71, 0.2) 0%, rgba(255, 71, 71, 0.05) 100%), url('/public/giftbg.svg');
   height: 246px;
   width: 174.5px;
   padding: 15px;
@@ -147,8 +141,8 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  width: Hug (107px)px;
-  height: Fixed (30px)px;
+  width: 107px;
+  height: 30px;
   top: 200px;
   left: 33.75px;
   padding: 6px 16px 6px 12px;
@@ -170,12 +164,12 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  width: Hug (107px)px;
-  height: Fixed (30px)px;
+  width: 107px;
+  height: 30px;
   top: 200px;
   left: 33.75px;
   padding: 6px 16px 6px 12px;
-  gap: 0px;
+  gap: 0;
   border: none;
   border-radius: 100px;
   background-color: rgb(243, 231, 231);
